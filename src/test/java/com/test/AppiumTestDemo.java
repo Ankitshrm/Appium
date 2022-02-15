@@ -13,6 +13,8 @@ public class AppiumTestDemo {
 
     @Test
     public void FirstAppiumTest() throws MalformedURLException {
+
+        //adb shell am start -n com.package.name/com.package.name.ActivityName
         DesiredCapabilities capabilities =new DesiredCapabilities();
         capabilities.setCapability(MobileCapabilityType.APP,System.getProperty("user.dir")+"/ApiDemos-debug.apk");
         capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME,"UiAutomator2");
